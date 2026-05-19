@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-foreground: #1a1a1a;
+  --font-sans: var(--font-heebo);
+}
+
+body {
+  color: var(--color-foreground);
+  overflow-x: hidden;
+}
+
+/* Floating blob animations */
+@keyframes blob1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(-60px, 80px) scale(1.15); }
+  66%       { transform: translate(40px, -40px) scale(0.9); }
+}
+@keyframes blob2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(80px, -60px) scale(0.9); }
+  66%       { transform: translate(-50px, 80px) scale(1.1); }
+}
+@keyframes blob3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(60px, 60px) scale(1.2); }
+}
+@keyframes blob4 {
+  0%, 100% { transform: translate(0, 0) scale(1.1); }
+  50%       { transform: translate(-70px, -50px) scale(0.9); }
+}
+
+/* Floating emoji animation */
+@keyframes floatUp {
+  0%        { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+  50%       { transform: translateY(-24px) rotate(8deg); opacity: 1; }
+  100%      { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+}
+
+/* Overcooked-style food character float */
+@keyframes floatChar {
+  0%, 100% { transform: translateY(0px) rotate(-5deg); }
+  35%       { transform: translateY(-22px) rotate(6deg); }
+  65%       { transform: translateY(-10px) rotate(-2deg); }
+}
+
+/* Game-style 3D press buttons */
+.game-btn-primary {
+  display: inline-block;
+  background: #16a34a;
+  color: white;
+  border: 3px solid #14532d;
+  box-shadow: 0 6px 0 #14532d, 0 10px 24px rgba(22, 163, 74, 0.3);
+  border-radius: 1rem;
+  font-weight: 800;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.game-btn-primary:hover {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #14532d, 0 6px 16px rgba(22, 163, 74, 0.25);
+}
+.game-btn-primary:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 #14532d, 0 3px 8px rgba(22, 163, 74, 0.2);
+}
+
+.game-btn-secondary {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  color: #374151;
+  border: 3px solid rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 1rem;
+  font-weight: 800;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.game-btn-secondary:hover {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.14);
+}
+.game-btn-secondary:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.game-btn-cta {
+  display: inline-block;
+  background: white;
+  color: #15803d;
+  border: 3px solid #14532d;
+  box-shadow: 0 6px 0 #14532d;
+  border-radius: 1rem;
+  font-weight: 800;
+  font-size: 1.125rem;
+  padding: 1rem 2.5rem;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.game-btn-cta:hover {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #14532d;
+}
+.game-btn-cta:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 #14532d;
+}
+
+.game-btn-sm-green {
+  display: inline-block;
+  background: #22c55e;
+  color: white;
+  border: 2px solid #14532d;
+  box-shadow: 0 4px 0 #14532d;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.4rem 1.1rem;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.game-btn-sm-green:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #14532d;
+}
+.game-btn-sm-green:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #14532d;
+}
+
+.game-btn-sm-white {
+  display: inline-block;
+  background: #f9fafb;
+  color: #374151;
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.4rem 1.1rem;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.game-btn-sm-white:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.14);
+}
+.game-btn-sm-white:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
