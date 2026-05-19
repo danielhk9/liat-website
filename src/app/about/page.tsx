@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-extrabold text-green-600 mb-8">אודות ליאת</h1>
+      <h1 className="text-3xl md:text-4xl font-extrabold text-green-600 mb-8">אודות ליאת</h1>
 
       {/* Placeholder image */}
       <div className="bg-gray-200 rounded-2xl aspect-video flex items-center justify-center mb-10">

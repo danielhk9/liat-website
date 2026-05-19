@@ -10,19 +10,25 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       <div
-        className="mx-4 mt-3 rounded-2xl px-6 py-3 flex items-center justify-between"
+        className="mx-3 mt-3 rounded-2xl px-4 py-3 flex items-center justify-between"
         style={{
           background: "#fffbf0",
           border: "3px solid #1a1a1a",
           boxShadow: "0 5px 0 rgba(0,0,0,0.2)",
         }}
       >
-        <Link href="/" className="flex items-center gap-2 text-2xl font-extrabold text-green-600 hover:text-green-700 transition-colors">
-          <span className="text-xl">🥗</span>
+        <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-extrabold text-green-600 hover:text-green-700 transition-colors">
+          <span>🥗</span>
           לחשוב בריא
         </Link>
 
-        <nav className="flex items-center gap-1">
+        {/* Mobile: contact button only */}
+        <Link href="/contact" className="game-btn-sm-green md:hidden">
+          צור קשר
+        </Link>
+
+        {/* Desktop: full nav */}
+        <nav className="hidden md:flex items-center gap-1">
           {links.map((l) => (
             <Link
               key={l.href}

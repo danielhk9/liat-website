@@ -17,7 +17,7 @@ export default function Adults() {
         <span className="text-gray-400 text-sm">תמונה מהסדנה</span>
       </div>
 
-      <h1 className="text-4xl font-extrabold text-green-600 mb-4">סדנאת מבוגרים</h1>
+      <h1 className="text-3xl md:text-4xl font-extrabold text-green-600 mb-4">סדנאת מבוגרים</h1>
       <p className="text-gray-600 text-lg mb-8 leading-relaxed">
         סדנאה למבוגרים — הורים, סבתות וסבות — שרוצים ללמוד כיצד להכין אוכל בריא לילדים
         ולשנות את הגישה לתזונה נכונה. תלמדו כיצד לחשוב בריא, לבשל בריא ולהנות מהדרך.
@@ -33,7 +33,7 @@ export default function Adults() {
       </ul>
 
       <div
-        className="rounded-3xl p-8"
+        className="rounded-3xl p-5 md:p-8"
         style={{
           background: "rgba(255,255,255,0.9)",
           border: "3px solid #14532d",

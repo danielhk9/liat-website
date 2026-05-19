@@ -50,7 +50,7 @@ export default function Home() {
 
         {/* Hero card */}
         <div
-          className="relative text-center max-w-2xl mx-auto px-10 py-16 rounded-3xl"
+          className="relative text-center max-w-2xl mx-auto px-5 py-10 md:px-10 md:py-16 rounded-3xl"
           style={{
             background: "rgba(255,255,255,0.72)",
             backdropFilter: "blur(24px)",
@@ -62,11 +62,11 @@ export default function Home() {
           <div className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
             🌱 סדנאות תזונה בריאה לכל המשפחה
           </div>
-          <h1 className="text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
             לחשוב{" "}
             <span className="text-green-600">בריא</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 mb-8 md:mb-10 leading-relaxed">
             כי תזונה נכונה מתחילה בחשיבה נכונה —<br />
             סדנאות בישול לילדים, גלידה, ומבוגרים
           </p>
@@ -95,15 +95,15 @@ export default function Home() {
       {/* CTA Strip */}
       <section className="max-w-4xl mx-auto px-6 pb-24">
         <div
-          className="text-center px-10 py-14 rounded-3xl"
+          className="text-center px-6 py-10 md:px-10 md:py-14 rounded-3xl"
           style={{
             background: "linear-gradient(135deg, #16a34a, #15803d)",
             boxShadow: "0 20px 60px rgba(22,163,74,0.3)",
             border: "3px solid #14532d",
           }}
         >
-          <h2 className="text-3xl font-bold text-white mb-3">מוכנים להתחיל?</h2>
-          <p className="text-green-100 mb-8 text-lg">צרו קשר ואמצא את הסדנה המתאימה לכם</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">מוכנים להתחיל?</h2>
+          <p className="text-green-100 mb-6 md:mb-8 text-base md:text-lg">צרו קשר ואמצא את הסדנה המתאימה לכם</p>
           <Link href="/contact" className="game-btn-cta">
             צרו קשר עכשיו
           </Link>

@@ -44,6 +44,18 @@ body {
   65%       { transform: translateY(-10px) rotate(-2deg); }
 }
 
+/* Mobile-responsive game buttons */
+@media (max-width: 640px) {
+  .game-btn-primary,
+  .game-btn-secondary,
+  .game-btn-cta {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* Game-style 3D press buttons */
 .game-btn-primary {
   display: inline-block;
