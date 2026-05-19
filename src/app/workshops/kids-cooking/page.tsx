@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import CalBooking from "@/components/CalBooking";
 
 export const metadata = {
@@ -12,9 +13,13 @@ export default function KidsCooking() {
         ← חזרה לסדנאות
       </Link>
 
-      {/* Placeholder image */}
-      <div className="bg-gray-200 rounded-2xl aspect-video flex items-center justify-center mb-10">
-        <span className="text-gray-400 text-sm">תמונה מהסדנה</span>
+      {/* Workshop images */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10">
+        {["/images/image1.jpeg", "/images/image2.jpeg", "/images/image3.jpeg"].map((src, i) => (
+          <div key={i} className="relative aspect-square rounded-2xl overflow-hidden">
+            <Image src={src} alt={`סדנאת בישול לילדים ${i + 1}`} fill className="object-cover" />
+          </div>
+        ))}
       </div>
 
       <h1 className="text-3xl md:text-4xl font-extrabold text-green-600 mb-4">סדנאת בישול לילדים</h1>
