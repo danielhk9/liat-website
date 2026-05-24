@@ -91,24 +91,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* CTA Strip */}
-      <section className="max-w-4xl mx-auto px-6 pb-24">
-        <div
-          className="text-center px-6 py-10 md:px-10 md:py-14 rounded-3xl"
-          style={{
-            background: "linear-gradient(135deg, #16a34a, #15803d)",
-            boxShadow: "0 20px 60px rgba(22,163,74,0.3)",
-            border: "3px solid #14532d",
-          }}
-        >
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">מוכנים להתחיל?</h2>
-          <p className="text-green-100 mb-6 md:mb-8 text-base md:text-lg">צרו קשר ואמצא את הסדנה המתאימה לכם</p>
-          <Link href="/contact" className="game-btn-cta">
-            צרו קשר עכשיו
-          </Link>
-        </div>
-      </section>
     </>
   );
 }
