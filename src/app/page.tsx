@@ -70,12 +70,9 @@ export default function Home() {
             כי תזונה נכונה מתחילה בחשיבה נכונה —<br />
             סדנאות בישול לילדים, גלידה, ומבוגרים
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link href="#workshops" className="game-btn-primary">
               לסדנאות שלי
-            </Link>
-            <Link href="/contact" className="game-btn-secondary">
-              צרו קשר
             </Link>
           </div>
         </div>
