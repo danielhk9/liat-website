@@ -8,7 +8,7 @@ export const metadata = {
 export default function IceCream() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-20">
-      <Link href="/workshops" className="text-green-600 text-sm font-semibold hover:underline mb-6 inline-block">
+      <Link href="/#workshops" className="text-green-600 text-sm font-semibold hover:underline mb-6 inline-block">
         ← חזרה לסדנאות
       </Link>
 

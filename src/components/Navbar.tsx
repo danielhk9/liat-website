@@ -3,7 +3,7 @@ import Link from "next/link";
 const links = [
   { href: "/", label: "בית" },
   { href: "/about", label: "אודות" },
-  { href: "/workshops", label: "סדנאות" },
+  { href: "/#workshops", label: "סדנאות" },
 ];
 
 export default function Navbar() {

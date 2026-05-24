@@ -71,7 +71,7 @@ export default function Home() {
             סדנאות בישול לילדים, גלידה, ומבוגרים
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/workshops" className="game-btn-primary">
+            <Link href="#workshops" className="game-btn-primary">
               לסדנאות שלי
             </Link>
             <Link href="/contact" className="game-btn-secondary">
@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* Workshop Cards */}
-      <section className="max-w-5xl mx-auto px-6 py-16">
+      <section id="workshops" className="max-w-5xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-3 text-gray-800">הסדנאות שלי</h2>
         <p className="text-center text-gray-500 mb-12">בחרו את הסדנה שמתאימה לכם</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8" style={{ perspective: 1000 }}>
